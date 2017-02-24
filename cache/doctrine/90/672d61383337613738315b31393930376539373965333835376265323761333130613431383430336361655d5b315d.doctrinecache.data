@@ -1,0 +1,220 @@
+1488553214
+a:2:{s:7:"content";s:4286:"<p>Unique pages or templates for the site</p>
+<h3>Product</h3>
+<table>
+<thead>
+<tr>
+<th>Pages</th>
+<th>Url example</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Product&nbsp;categories</td>
+<td><code>products/ranges</code><br>  <code>products/home-cinema/av-receivers</code></td>
+<td>Contains each product and can be filtered per category. Each category has it's own url that automaticaly filters to that category, but otherwise is one same page</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Range (v2)</td>
+<td><code>products/cx</code></td>
+<td>Content type = "Range Page". For CX, 851</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Range (v3)</td>
+<td><code>products/minx</code></td>
+<td>Content type = "Range - Embedded Products". For Minx, Outdoor speakers (Es20/30)</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Range (Yoyo)</td>
+<td><code>products/yoyo</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Product (v2)</td>
+<td><code>products/speakers/aero-3</code></td>
+<td>View mode  = Product V2</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Product (v3)</td>
+<td><code>wireless-sound/yoyo/yoyo-s</code></td>
+<td>View mode  = Full content</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>In-ceiling</td>
+<td><code>wireless-sound/yoyo/yoyo-s</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Archive</td>
+<td><code>products/hifi/azur-351c</code></td>
+<td>Display mode = archive</td>
+<td>Recurring</td>
+</tr>
+</tbody>
+</table>
+<h3>Content</h3>
+<table>
+<thead>
+<tr>
+<th>Pages</th>
+<th>Url example</th>
+<th>Description</th>
+<th>Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Front</td>
+<td>`/``</td>
+<td>Main entrance</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>User</td>
+<td><code>user</code></td>
+<td>"Pages"</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Blog posts</td>
+<td><code>blog/jim-and-sam</code> <br>  <code>testimonials/netil360</code> <br>  <code>about-us/our-history</code></td>
+<td>Blog posts, Testimonials, links off About us</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Blogs (tiles)</td>
+<td><code>blogs</code></td>
+<td>"Pages" eg "admin/structure/pages". Tiles</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Testimonials (tiles)</td>
+<td><code>blogs</code></td>
+<td>"Pages" Tiles</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>About us</td>
+<td><code>about-us</code></td>
+<td>"Pages". Tiles</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Technology</td>
+<td><code>our-tech</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Our team</td>
+<td><code>ourteam</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>About Us - Tile</td>
+<td>n/a</td>
+<td>3 categories: Timeline, dropdown content and link</td>
+<td>Recurring</td>
+</tr>
+<tr>
+<td>Contact</td>
+<td><code>contact</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Find a dealer</td>
+<td><code>dealers</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Product registration</td>
+<td><code>register</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Product registration thanks you</td>
+<td><code>/register/thank-you</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Newsletter</td>
+<td><code>newsletter</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Careers</td>
+<td><code>careers</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Privacy &amp; Cookie Policy</td>
+<td><code>legal/privacy-and-cookie-policy</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Terms and Conditions</td>
+<td><code>legal/terms-and-conditions</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>404</td>
+<td><code>for-oh-four</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Awards</td>
+<td><code>awards</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>DacMagic PSU <br> Replacement Program</td>
+<td><code>dacmagic-psu</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Minx Centre <br> Grille Order Centre</td>
+<td><code>minx-grille</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>DacMagic PSU <br> Replacement Program - <br> Thank you page</td>
+<td><code>/dacmagic-psu/thank-you</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Minx Grille - Thank you page</td>
+<td><code>minx-grille/thank-you</code></td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>search</td>
+<td>"Pages"</td>
+<td>Unique</td>
+</tr>
+</tbody>
+</table>";s:12:"content_meta";N;}
