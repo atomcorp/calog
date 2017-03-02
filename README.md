@@ -1,35 +1,10 @@
-# Edition
+## To use
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+Install [Jekyll](http://jekyllrb.com/). Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
 
-![Edition template screenshot](images/_screenshot.png)
+Install [Ruby](https://www.ruby-lang.org/en/downloads/), if necessary.
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
-
-Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
-
-## Features
-
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
-
-## Setup
-
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
-
-## Develop
-
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+With command line, cd into folder:
 
 Install the dependencies with [Bundler](http://bundler.io/):
 
@@ -37,7 +12,7 @@ Install the dependencies with [Bundler](http://bundler.io/):
 $ bundle install
 ~~~
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
+Run `jekyll` commands through Bundler to ensure you're using the right versions. This allows a preview version on local host:
 
 ~~~bash
 $ bundle exec jekyll serve

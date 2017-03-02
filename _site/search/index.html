@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Edition Template" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Search - Edition Template</title>
+<meta property="og:title" content="Search" />
+<meta name="description" content="Product documentation template for Jekyll." />
+<meta property="og:description" content="Product documentation template for Jekyll." />
+<link rel="canonical" href="http://localhost:4000/search/" />
+<meta property="og:url" content="http://localhost:4000/search/" />
+<meta property="og:site_name" content="Edition Template" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "headline": "Search",
+    "description": "Product documentation template for Jekyll.",
+    "logo": "http://localhost:4000/siteicon.png",
+    "url": "http://localhost:4000/search/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="Edition Template logo"></a>
+				Edition Template
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Cambridge Audio Log</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/design-guide/css/">Style Guide</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/design-guide/css/">CSS</a></li>
+								
+									<li class="nav-item "><a href="/design-guide/js/">Javascript</a></li>
+								
+									<li class="nav-item "><a href="/design-guide/copy/">Copy</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/page-structure/pages/">Page Structure</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/page-structure/pages/">Pages</a></li>
+								
+									<li class="nav-item "><a href="/page-structure/components/">Components</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/">Change Log</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Edition Template</h2>
+				<h3>Search</h3>
+			</div>
+			<article class="content">
+				<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
+<ul id="search-results"></ul>
+
+<script>
+	window.data = {
+		
+			
+				
+					
+					
+
+					"design-guide-copy": {
+						"id": "design-guide-copy",
+						"title": "Copy",
+						"category": "",
+						"url": " /design-guide/copy/",
+						"content": "How to style writing on cambridgeaudio.com See Mailchimp’s Web Elements guide for pointers. See translations guide from Mailchimp."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"design-guide-css": {
+						"id": "design-guide-css",
+						"title": "CSS",
+						"category": "",
+						"url": " /design-guide/css/",
+						"content": "Information about writing CSS for Cambridge sites. BEM Follow BEM. A clear representation of the concept can be found here BEM Key Concepts. Some extra rules can be found below BEM stands for Block, Element and Modifier Blocks should be a standalone, independent components. A block can exist anywhere, including in other blocks Elements should be something that makes up the block. An element can not be used outside it’s block, it’s an element of the block. An element can not can not live in another element Modifiers represent a different state or version of the block or element, these should be used rarely. If you do, think carefully whether you are modifying the block or an element .block { } .block__element { } .block--modifier { } or .person { } .person__head { } .person--tall { } .person__head--large { } use this one rarely Here’s a more complete example: &lt;!-- New block Header --&gt; &lt;div class=\"header\"&gt; &lt;!-- New block logo --&gt; &lt;div class=\"logo\"&gt; &lt;div class=\"logo__image\"&gt; &lt;img src=\" img.jpg\" alt=\"logo\"&gt; &lt; div&gt; &lt;div class=\"logo__text\"&gt; Site name &lt; div&gt; &lt; div&gt; &lt;!-- New block nav --&gt; &lt;div class=\"nav\"&gt; &lt;!-- Elements can be repeated (as can blocks, eg .blog, .news-story) --&gt; &lt;div class=\"nav__link nav__link\"&gt; Blogs &lt; div&gt; &lt;div class=\"nav__link nav__link--active\"&gt; About us &lt; div&gt; &lt; div&gt; &lt;!-- New element of header ( this gets tricky: search is not unique to the header, it's the header's search) --&gt; &lt;div class=\"header__search\"&gt; &lt;input type=\"text\" placeholder=\"Search our site\"&gt; &lt; div&gt; &lt; div&gt; If possible try and avoid using names with hyphens in them such as .block-name A good tip is too use plurals and repeatable singles, similar to a foreach loop foreach ($blogs as $blog), such as: &lt;div class=\"slides\"&gt; &lt;div class=\"slide\"&gt; 1 &lt; div&gt; &lt;div class=\"slide\"&gt; 2 &lt; div&gt; &lt; div&gt; or &lt;div class=\"example-entries\"&gt; &lt;div class=\"example-entry\"&gt; a &lt; div&gt; &lt;div class=\"example-entry\"&gt; b &lt; div&gt; &lt; div&gt; SASS Syntax Use the .scss syntax, never the original .sass syntax Order your regular CSS and @include declarations logically (see below) Ordering of property declarations List all standard property declarations, anything that isn’t an @include or a nested selector first. Then any @include declarations if you have them Nested selectors, if necessary, go last, and nothing goes after them. .btn { background: green; font-weight: bold; @include transition(background 0.5s ease); .icon { margin-right: 10px; } } Nested selectors Attempt to avoid using nested selectors. They encourage specifity, and discourage modular design. If you must only go one level deep Nesting is OK for the following: Pseudo classes such as :hover Modifier classes like .btn.active that inherit the parent’s properties HTML tags like p, where creating a new selector like .content__paragraph would not make sense If you don’t have control over the markup (looking at you Drupal) HTML tag heavy structures such as tables (td, thead etc) and forms (option, select), where again the semantics of the tag is self explanatory For the a tag, as a general rule if it’s wrapping other elements (like an image and text) add a selector to the a. If it's the last element (like a link in a body of text), use a` nested .page-container { .content { .profile { BAD! } } } CSS Try to only ever use shorcuts for selectors such as padding, margin and border good padding: 0 5px 10px 2px; bad padding-left: 10px; Prefer tabs for indentation Prefer dashes over camelCasing in class names. Do not use ID as selectors When using multiple selectors in a rule declaration, give each selector its own line. Put a space before the opening brace { in rule declarations In properties, put a space after, but not before, the : character. Put closing braces } of rule declarations on a new line Put blank lines between rule declarations Don’t use vendor prefixies, use autoprefixer Try and using utility classes or modifier classes, that do one minor thing such as .padding-top-10px, .pink-text or .invisible Never use !important Never use @extend Try and avoid abbreviating names, unless they’re already widespread (eq .btn or nav is ok) Names should be created at a component level, not a page level. .nav vs .homepage-nav Prefer line comments ( in Sass-land) to block comments. Prefer comments on their own line. Avoid end-of-line comments. Write detailed comments for code that isn’t self-documenting: Compatibility or browser-specific hacks Uses of z-index Media queries Only ever use min-width, never max-width Write your selectors mobile first, so subsequent selectors for larger screens inherit their properties. This avoids repetition, and makes your code more managable. Write in ascending order of size. Eg a style that applies to every size screen goes first, one that is min-width: 992px comes after. For instance: .content { width: 100%; margin: 0 15px; } @media (min-width: 720px) { .content { width: 700px; margin: 0 auto; } } @media (min-width: 920px) { .content { width: 900px; } } Keep media queries for each scss file together. All selectors targeting min-width: 992px should be in one @media block JavaScript Hooks Use classes prepended with js- and do not style these with CSS. Do not use data-* attributes for hooks, only for storing data. eg: &lt;input type=\"submit\" class=\"btn js-btn\" value=\"Follow\" &gt; NB: Some examples are taken from Airbnbs design guide (don’t ask me which)."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"design-guide-js": {
+						"id": "design-guide-js",
+						"title": "Javascript",
+						"category": "",
+						"url": " /design-guide/js/",
+						"content": "Information about writing Javascript for Cambridge sites At the moment for new projects let’s aspire to the Airbnb JS style guide. It’s very long, ES2015 heavy, and requires some extra learning understanding."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"page-structure-components": {
+						"id": "page-structure-components",
+						"title": "Components",
+						"category": "",
+						"url": " /page-structure/components/",
+						"content": "Todo.."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"page-structure-pages": {
+						"id": "page-structure-pages",
+						"title": "Pages",
+						"category": "",
+						"url": " /page-structure/pages/",
+						"content": "Unique pages or templates for the site Product Pages Url example Description Type Product categories products ranges products home-cinema av-receivers Contains each product and can be filtered per category. Each category has it’s own url that automaticaly filters to that category, but otherwise is one same page Recurring Range (v2) products cx Content type = “Range Page”. For CX, 851 Recurring Range (v3) products minx Content type = “Range - Embedded Products”. For Minx, Outdoor speakers (Es20 30) Recurring Range (Yoyo) products yoyo “Pages” Unique Product (v2) products speakers aero-3 View mode = Product V2 Recurring Product (v3) wireless-sound yoyo yoyo-s View mode = Full content Recurring In-ceiling wireless-sound yoyo yoyo-s “Pages” Unique Archive products hifi azur-351c Display mode = archive Recurring Content Pages Url example Description Type Front Main entrance Unique User user “Pages” Recurring Blog posts blog jim-and-sam testimonials netil360 about-us our-history Blog posts, Testimonials, links off About us Recurring Blogs (tiles) blogs “Pages” eg “admin structure pages”. Tiles Unique Testimonials (tiles) blogs “Pages” Tiles Unique About us about-us “Pages”. Tiles Unique Technology our-tech “Pages” Unique Our team ourteam “Pages” Unique About Us - Tile n a 3 categories: Timeline, dropdown content and link Recurring Contact contact “Pages” Unique Find a dealer dealers “Pages” Unique Product registration register “Pages” Unique Product registration thanks you register thank-you “Pages” Unique Newsletter newsletter “Pages” Unique Careers careers “Pages” Unique Privacy &amp; Cookie Policy legal privacy-and-cookie-policy “Pages” Unique Terms and Conditions legal terms-and-conditions “Pages” Unique 404 for-oh-four “Pages” Unique Awards awards “Pages” Unique DacMagic PSU Replacement Program dacmagic-psu “Pages” Unique Minx Centre Grille Order Centre minx-grille “Pages” Unique DacMagic PSU Replacement Program - Thank you page dacmagic-psu thank-you “Pages” Unique Minx Grille - Thank you page minx-grille thank-you “Pages” Unique Search search “Pages” Unique"
+					}
+
+					
+				
+			
+		
+	};
+</script>
+<script src="/scripts/lunr.min.js"></script>
+<script src="/scripts/search.js"></script>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

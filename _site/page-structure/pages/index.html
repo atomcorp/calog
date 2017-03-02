@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Edition Template" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Pages - Edition Template</title>
+<meta property="og:title" content="Pages" />
+<meta name="description" content="Unique pages or templates for the site" />
+<meta property="og:description" content="Unique pages or templates for the site" />
+<link rel="canonical" href="http://localhost:4000/page-structure/pages/" />
+<meta property="og:url" content="http://localhost:4000/page-structure/pages/" />
+<meta property="og:site_name" content="Edition Template" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-03-02T16:48:27+00:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Pages",
+    "datePublished": "2017-03-02T16:48:27+00:00",
+    "description": "Unique pages or templates for the site",
+    "logo": "http://localhost:4000/siteicon.png",
+    "url": "http://localhost:4000/page-structure/pages/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="Edition Template logo"></a>
+				Edition Template
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Cambridge Audio Log</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/design-guide/css/">Style Guide</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/design-guide/css/">CSS</a></li>
+								
+									<li class="nav-item "><a href="/design-guide/js/">Javascript</a></li>
+								
+									<li class="nav-item "><a href="/design-guide/copy/">Copy</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/page-structure/pages/">Page Structure</a>
+							<ul>
+								
+									<li class="nav-item current"><a href="/page-structure/pages/">Pages</a></li>
+								
+									<li class="nav-item "><a href="/page-structure/components/">Components</a></li>
+								
+							</ul>
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/">Change Log</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<h2>Page Structure</h2>
+				<h3>Pages</h3>
+			</div>
+			<article class="content">
+				<p>Unique pages or templates for the site</p>
+
+<h3 id="product">Product</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pages</th>
+      <th>Url example</th>
+      <th>Description</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product categories</td>
+      <td><code class="highlighter-rouge">products/ranges</code><br />  <code class="highlighter-rouge">products/home-cinema/av-receivers</code></td>
+      <td>Contains each product and can be filtered per category. Each category has it’s own url that automaticaly filters to that category, but otherwise is one same page</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Range (v2)</td>
+      <td><code class="highlighter-rouge">products/cx</code></td>
+      <td>Content type = “Range Page”. For CX, 851</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Range (v3)</td>
+      <td><code class="highlighter-rouge">products/minx</code></td>
+      <td>Content type = “Range - Embedded Products”. For Minx, Outdoor speakers (Es20/30)</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Range (Yoyo)</td>
+      <td><code class="highlighter-rouge">products/yoyo</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Product (v2)</td>
+      <td><code class="highlighter-rouge">products/speakers/aero-3</code></td>
+      <td>View mode  = Product V2</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Product (v3)</td>
+      <td><code class="highlighter-rouge">wireless-sound/yoyo/yoyo-s</code></td>
+      <td>View mode  = Full content</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>In-ceiling</td>
+      <td><code class="highlighter-rouge">wireless-sound/yoyo/yoyo-s</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Archive</td>
+      <td><code class="highlighter-rouge">products/hifi/azur-351c</code></td>
+      <td>Display mode = archive</td>
+      <td>Recurring</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="content">Content</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pages</th>
+      <th>Url example</th>
+      <th>Description</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Front</td>
+      <td><code class="highlighter-rouge">/</code></td>
+      <td>Main entrance</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>User</td>
+      <td><code class="highlighter-rouge">user</code></td>
+      <td>“Pages”</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Blog posts</td>
+      <td><code class="highlighter-rouge">blog/jim-and-sam</code> <br />  <code class="highlighter-rouge">testimonials/netil360</code> <br />  <code class="highlighter-rouge">about-us/our-history</code></td>
+      <td>Blog posts, Testimonials, links off About us</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Blogs (tiles)</td>
+      <td><code class="highlighter-rouge">blogs</code></td>
+      <td>“Pages” eg “admin/structure/pages”. Tiles</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Testimonials (tiles)</td>
+      <td><code class="highlighter-rouge">blogs</code></td>
+      <td>“Pages” Tiles</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>About us</td>
+      <td><code class="highlighter-rouge">about-us</code></td>
+      <td>“Pages”. Tiles</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Technology</td>
+      <td><code class="highlighter-rouge">our-tech</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Our team</td>
+      <td><code class="highlighter-rouge">ourteam</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>About Us - Tile</td>
+      <td>n/a</td>
+      <td>3 categories: Timeline, dropdown content and link</td>
+      <td>Recurring</td>
+    </tr>
+    <tr>
+      <td>Contact</td>
+      <td><code class="highlighter-rouge">contact</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Find a dealer</td>
+      <td><code class="highlighter-rouge">dealers</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Product registration</td>
+      <td><code class="highlighter-rouge">register</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Product registration thanks you</td>
+      <td><code class="highlighter-rouge">/register/thank-you</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Newsletter</td>
+      <td><code class="highlighter-rouge">newsletter</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Careers</td>
+      <td><code class="highlighter-rouge">careers</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Privacy &amp; Cookie Policy</td>
+      <td><code class="highlighter-rouge">legal/privacy-and-cookie-policy</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Terms and Conditions</td>
+      <td><code class="highlighter-rouge">legal/terms-and-conditions</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>404</td>
+      <td><code class="highlighter-rouge">for-oh-four</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Awards</td>
+      <td><code class="highlighter-rouge">awards</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>DacMagic PSU <br /> Replacement Program</td>
+      <td><code class="highlighter-rouge">dacmagic-psu</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Minx Centre <br /> Grille Order Centre</td>
+      <td><code class="highlighter-rouge">minx-grille</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>DacMagic PSU <br /> Replacement Program - <br /> Thank you page</td>
+      <td><code class="highlighter-rouge">/dacmagic-psu/thank-you</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Minx Grille - Thank you page</td>
+      <td><code class="highlighter-rouge">minx-grille/thank-you</code></td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+    <tr>
+      <td>Search</td>
+      <td>search</td>
+      <td>“Pages”</td>
+      <td>Unique</td>
+    </tr>
+  </tbody>
+</table>
+
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
