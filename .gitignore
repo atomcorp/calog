@@ -1,10 +1,9 @@
+_site/
+.sass-cache/
+.jekyll-metadata
 .git
-gulpfile.js
 *.sublime-workspace
 prepros.cfg
 *.sublime-project
 node_modules
 *.sublime-project
-*.sublime-workspace
-*.jshintignore
-cache
