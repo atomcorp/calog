@@ -1,7 +1,7 @@
 ---
 title: Browser Support
 category: Style Guide
-order: 2
+order: 5
 ---
 
 For CSS and JS (and anything else relevent to run on a web page) we support the following:
