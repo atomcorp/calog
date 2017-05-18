@@ -12,6 +12,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/cms/ca/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/design-guide/browser-support/</loc>
 </url>
 <url>
